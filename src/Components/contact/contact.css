@@ -1,0 +1,94 @@
+.contact-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-page h1 {
+  margin-bottom: 20px; /* Reduced margin */
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Reduced gap between form and info/map sections */
+}
+
+/* Form Section */
+.form-section {
+  flex: 1;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 10px; /* Reduced margin between form fields */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #555;
+}
+
+/* Info and Map Section (Column Layout) */
+.info-map-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap between info and map */
+}
+
+.info-column,
+.map-column {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Map Column */
+.map-column iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .row-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section {
+    max-width: 100%;
+  }
+
+  .info-map-column {
+    width: 100%;
+  }
+}
